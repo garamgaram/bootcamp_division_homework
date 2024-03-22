@@ -6,7 +6,16 @@
 #include <stdio.h>
 
 int main() {
-    // 이곳에 코드를 작성해주세요!
+    int a,b;
+    printf("시각입력(1-24)?");
+    scanf("%d",&a);
+    if(a>11) {
+        a=a-12;
+        printf("PM%d");
+    }
+    else {
+        printf("AM%d");
+    }
 
     return 0;
 }
