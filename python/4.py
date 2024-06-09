@@ -4,9 +4,21 @@
 """
 
 def main():
+    score = int(input("점수를 입력하세요: "))
+
+    if score >= 90:
+        print("등급: A")
+    elif score >= 80:
+        print("등급: B")
+    elif score >= 70:
+        print("등급: C")
+    elif score >= 60:
+        print("등급: D")
+    else:
+        print("등급: F")
+
     # 이곳에 코드를 작성해주세요!
 
-    return
 
 
 if __name__ == '__main__':

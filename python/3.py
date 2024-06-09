@@ -4,9 +4,19 @@
 """
 
 def main():
+    hour = int(input("시간을 입력하세요 (0부터 23까지): "))
+
+    if hour < 0 or hour > 23:
+        print("잘못된 입력입니다. 시간은 0부터 23까지의 정수여야 합니다.")
+        return
+
+    if hour < 12:
+        print("AM")
+    else:
+        print("PM")
+
     # 이곳에 코드를 작성해주세요!
 
-    return
 
 
 if __name__ == '__main__':

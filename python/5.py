@@ -4,9 +4,16 @@
 """
 
 def main():
+    age = int(input("나이를 입력하세요: "))
+    height = int(input("키를 입력하세요(cm): "))
+
+    if age >= 14 and height >= 160:
+        print("O")
+    else:
+        print("X")
+
     # 이곳에 코드를 작성해주세요!
 
-    return
 
 
 if __name__ == '__main__':

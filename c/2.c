@@ -7,6 +7,22 @@
 
 int main() {
     // 이곳에 코드를 작성해주세요!
+    int age;
+
+    printf("나이를 입력하세요: ");
+    int result = scanf("%d", &age);
+
+    if (result != 1) {
+        printf("유효한 나이를 입력하세요.\n");
+        return 1;
+    }
+     printf("입력된 나이: %d\n", age);
+
+     if (age >= 61) {
+        printf("DISCOUNT\n");
+    }
+    
+     printf("BOARD\n");
 
     return 0;
 }

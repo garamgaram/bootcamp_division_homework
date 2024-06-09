@@ -4,9 +4,24 @@
 """
 
 def main():
+    def factorial(n):
+        if n == 0:
+            return 1
+        else:
+            return n * factorial(n - 1)
+
+    n = int(input("정수 n을 입력하세요: "))
+
+    # 1부터 n까지의 합 구하기
+    sum_of_integers = sum(range(1, n + 1))
+    print(sum_of_integers)
+
+    # n! 구하기
+    factorial_result = factorial(n)
+    print(factorial_result)
+
     # 이곳에 코드를 작성해주세요!
 
-    return
 
 
 if __name__ == '__main__':

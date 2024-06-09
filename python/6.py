@@ -4,9 +4,15 @@
 """
 
 def main():
+    letter = input("알파벳 문자 하나를 입력하세요: ")
+
+    if letter in ['a', 'e', 'i', 'o', 'u']:
+        print("O")
+    else:
+        print("X")
+
     # 이곳에 코드를 작성해주세요!
 
-    return
 
 
 if __name__ == '__main__':

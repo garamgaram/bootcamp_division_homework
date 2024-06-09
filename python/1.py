@@ -5,7 +5,10 @@
 
 def main():
     # 이곳에 코드를 작성해주세요!
-
+    number = int(input())
+    for _ in range(3):
+        print(number % 10, end='')
+        number = number // 10
     return
 
 
